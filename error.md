@@ -1,1 +1,0 @@
- Error { kind: BulkWrite(BulkWriteFailure { write_errors: Some([BulkWriteError { index: 1, code: 11000, code_name: None, message: "E11000 duplicate key error collection: trial-fcf331c5-aa89-4b9a-af94-513fefc00aa4 index: _formOid", details: None }]), write_concern_error: None, inserted_ids: {} }), labels: {} }

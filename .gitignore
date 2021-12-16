@@ -1,2 +1,5 @@
 /target
 .env
+output.txt
+cert.pem
+copy_s3.sh
