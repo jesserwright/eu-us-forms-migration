@@ -188,6 +188,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "dotenv"
+version = "0.15.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77c90badedccf4105eca100756a0b1289e191f6fcbdadd3cee1d2f614f97da8f"
+
+[[package]]
 name = "enum-as-inner"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -197,6 +203,28 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "envy"
+version = "0.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3f47e0157f2cb54f5ae1bd371b30a2ae4311e1c028f575cd4e81de7353215965"
+dependencies = [
+ "serde",
+]
+
+[[package]]
+name = "eu-us-forms-migration"
+version = "0.1.0"
+dependencies = [
+ "dotenv",
+ "envy",
+ "futures",
+ "mongodb",
+ "serde",
+ "serde_json",
+ "tokio",
 ]
 
 [[package]]
@@ -828,17 +856,6 @@ name = "ryu"
 version = "1.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3c9613b5a66ab9ba26415184cfc41156594925a9cf3a2057e57f31ff145f6568"
-
-[[package]]
-name = "s37"
-version = "0.1.0"
-dependencies = [
- "futures",
- "mongodb",
- "serde",
- "serde_json",
- "tokio",
-]
 
 [[package]]
 name = "scopeguard"
